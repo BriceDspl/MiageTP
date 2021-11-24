@@ -15,7 +15,7 @@ Method OnProcessInput(pInput As %RegisteredObject, Output pOutput As %Registered
 
 Method GetCatalogue(pInput As %RegisteredObject, Output pOutput As %RegisteredObject) As %Status
 {
-    set tsc = ..SendRequestSync("Catalogue",pInput,.pOutput)
+    set tsc = ..SendRequestSync("CommandeVoiture",pInput,.pOutput)
     Quit $$$OK
 }
 
